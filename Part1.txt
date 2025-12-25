@@ -1,2 +1,42 @@
-To create a repository and link your local repository To
-global repository
+basic commands
+ls : List file
+ls -Force : List hidden files
+pwd : Shows where you are in which directory
+cd Folder_name : Move into the Folder_name
+cd .. : Move to parent Folder
+New-Item -ItemType Directory Folder_name : Makes new folder
+New-Item FileName.txt : Creates an empty file
+Remove-Item FileName.txt : Deletes a file
+Remove-Item FolderName -Recurse -Force : Deletes folder and content
+Move-Item Source Destination : Move files
+create a repository and link your local repository To global repository
+Clone:
+Clonning a repository on our local machine
+Means getting files from github to you computer/laptop
+Command : git clone "Link"
+Status:
+Displaying the status of the code
+Means checks weather the code is same in the local and github repository if not it gives the error
+it returns the below keyword when there is mis-match from local and github repository
+untracked : New files that git doesnt yet track 
+modified :changed
+staged :files is ready to be commited you can add and then commit followed by push
+unmodified : unchanged
+Add :
+adds new or changed files in your working directory to the git staging area.
+Command : git add FileName 
+Command : git add . (give adds all the files)
+Commit:
+it is the record of change.
+Command : git commit -m "Enter why did you chneg for future reference."
+Push:
+upload local repo content to remote content
+Command : git push origin main 
+Here main is the branch and origin is the default repository it decided when we clone with link
+the repositorywe have use when we copied the link and cloned that is the default repository.
+Command : git push -u origin main (-u means from now on, connect my local main branch to origin/main)
+after we have used this command once,
+from now we use below command at push in the same repository
+Command : git push (instead of the typing the same full location multiple times when pushed.)
+
+
