@@ -25,7 +25,7 @@ unmodified : unchanged
 Add :
 adds new or changed files in your working directory to the git staging area.
 Command : git add FileName 
-Command : git add . (give adds all the files)
+Command : git add . (adds all the files)
 Commit:
 it is the record of change.
 Command : git commit -m "Enter why did you chneg for future reference."
